@@ -4,15 +4,15 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: "Yuya Kaneta" # Website name
-baseurl: '' # Website URL
+baseurl: 'https://yuya-kaneta.netlify.app/' # Website URL
 copyright: '© 2021 Yuya Kaneta' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: "en"
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
