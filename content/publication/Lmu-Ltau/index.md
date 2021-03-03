@@ -1,5 +1,5 @@
 ---
-title: "On the possibility of a search for the $L_{mu} - L_{tau}$ gauge boson at Belle-II and neutrino beam experiments"
+title: On the possibility of a search for the $L_\mu - L_\tau$ gauge boson at Belle-II and neutrino beam experiments
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

@@ -1,5 +1,5 @@
 ---
-title: "Dirac CP phase in the neutrino mixing matrix and the Froggatt-Nielsen mechanism with det[$M_{nu}$]=0"
+title: Dirac CP phase in the neutrino mixing matrix and the Froggatt-Nielsen mechanism with $\det[M_\nu]=0$
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 

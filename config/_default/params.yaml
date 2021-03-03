@@ -42,10 +42,6 @@ contact_links:
     icon_pack: fab
     name: DM Me
     link: 'https://twitter.com/yucho147'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
 
 # Site header
 
