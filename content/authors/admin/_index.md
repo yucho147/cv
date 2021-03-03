@@ -43,6 +43,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/yucho147
+- icon: facebook
+  icon_pack: fab
+  link: https://www.facebook.com/yuya.kaneta
 - icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: fas
   link: https://inspirehep.net/authors/1498207?ui-citation-summary=true
