@@ -20,6 +20,7 @@ bio: My research interests include Machine learning and Particle physics.
 interests:
 - Gaussian process
 - Graph theory
+- Space exploration
 - Particle physics
 
 # Education to show in About widget
