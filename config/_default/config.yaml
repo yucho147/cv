@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: "Yuya Kaneta" # Website name
-baseurl: 'https://yuya-kaneta.netlify.app/' # Website URL
+baseurl: 'https://yuyakaneta.page' # Website URL
 copyright: '© 2021 Yuya Kaneta' # Footer text, e.g. '© {year} Me'
 
 ############################
