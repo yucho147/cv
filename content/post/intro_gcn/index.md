@@ -33,9 +33,11 @@ authors:
 
 tags:
 - post
+- reading_papers
 
 categories:
 - post
+- reading_papers
 ---
 
 # Table of Contents
