@@ -22,6 +22,7 @@ interests:
 - Graph theory
 - Space exploration
 - Particle physics
+- Julia lang
 
 # Education to show in About widget
 education:
