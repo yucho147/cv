@@ -8,7 +8,7 @@ summary: 弊社のプレスリリースに載りました。なんとICEPPに常
 external_link: https://www.brainpad.co.jp/news/2021/02/15/14225
 
 # Link this post with a project
-projects: []
+projects: [icepp_project]
 
 # Date published
 date: "2021-02-25T00:00:00Z"
