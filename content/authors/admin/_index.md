@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Yuya Kaneta
+title: Yuya Kaneta/金田佑哉
 
 # Is this the primary user of the site?
 superuser: true
