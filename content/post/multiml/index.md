@@ -33,9 +33,11 @@ authors:
 - admin
 
 tags:
+- package
 - お知らせ
 
 categories:
+- package
 - お知らせ
 ---
 

@@ -72,4 +72,4 @@ email: ""
 highlight_name: false
 ---
 
-I am a data scientist at the Brainpad Inc. My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I have been interested in the use of data in the space exploration industry.
+I am a data scientist at Brainpad Inc. My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I also interest in the use of data in the space exploration industry.
