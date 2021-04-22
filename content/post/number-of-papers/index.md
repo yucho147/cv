@@ -36,7 +36,9 @@ authors:
 tags:
 - nlp
 - アプリ
+- GCP
 
 categories:
 - アプリ
+- GCP
 ---
