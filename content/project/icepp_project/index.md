@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "ICEPP素粒子物理国際研究センターでの研究支援"
-summary: "ICEPPでの研究支援を開始しました。"
+summary: "ICEPPでの研究支援をしました。"
 tags:
 - Deep Learning
 date: 2020-10-01T20:19:36+09:00

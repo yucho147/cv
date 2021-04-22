@@ -31,6 +31,7 @@ links:
 # slides: example
 ---
 
-arXiv論文分析webアプリを作成しましたー
+arXiv論文分析webアプリを作成しましたー  
+背後でGCPで環境を構築しており、GAE/Cloud SQL等を用いて動いています。
 
 [Number of Papers](https://number-of-papers.com/)
