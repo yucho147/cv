@@ -11,10 +11,10 @@ summary: 災害医療プロジェクトの結果が論文の形で公開され�
 projects: []
 
 # Date published
-date: 2021-07-07T00:00:00+09:00
+date: 2021-07-01T00:00:00+09:00
 
 # Date updated
-lastmod: 2021-07-17T00:00:00+09:00
+lastmod: 2021-07-01T00:00:00+09:00
 
 # Is this an unpublished draft?
 draft: false
