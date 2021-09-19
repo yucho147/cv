@@ -11,10 +11,10 @@ summary: ICEPPとの研究プロジェクトの成果が論文になりました
 projects: [icepp_project]
 
 # Date published
-date: 2021-06-07T00:00:00+09:00
+date: 2021-06-04T00:00:00+09:00
 
 # Date updated
-lastmod: 2021-06-07T00:00:00+09:00
+lastmod: 2021-06-04T00:00:00+09:00
 
 # Is this an unpublished draft?
 draft: false
