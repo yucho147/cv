@@ -54,9 +54,10 @@ categories:
 
 ピックアップしたアカウントリスト: [ml_chatbot/user_list.yaml at main · yucho147/ml_chatbot](https://github.com/yucho147/ml_chatbot/blob/main/user_list.yaml) 
 
-| slack画面(参考)                                                                              | Rocket.Chat画面(参考)                                                                             |
-|:--------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|
-| {{< figure src="https://github.com/yucho147/ml_chatbot/blob/main/figs/slack_example.png" >}} | {{< figure src="https://github.com/yucho147/ml_chatbot/blob/main/figs/rocketchat_example.png" >}} |
+| app         | example fig                                                                                           |
+|-------------|-------------------------------------------------------------------------------------------------------|
+| slack       | ![slack](https://raw.githubusercontent.com/yucho147/ml_chatbot/main/figs/slack_example.png)           |
+| Rocket.Chat | ![rocketchat](https://raw.githubusercontent.com/yucho147/ml_chatbot/main/figs/rocketchat_example.png) |
 
 ↑twitterの書き込みが綺麗に表示されるようにattachmentsをパースしています。
 
