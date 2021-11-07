@@ -1,9 +1,9 @@
 ---
-title: 【論文紹介】MCFlow: Monte Carlo Flow Models for Data Imputation
-subtitle: 新しい欠損データの補完法に関する論文紹介
+title: "【論文紹介】MCFlow: Monte Carlo Flow Models for Data Imputation"
+subtitle: "新しい欠損データの補完法に関する論文紹介"
 
 # Summary for listings and search engines
-summary: 新しい欠損データの補完法に関する論文紹介
+summary: "新しい欠損データの補完法に関する論文紹介"
 
 external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/07/143102
 
