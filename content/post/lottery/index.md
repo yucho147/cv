@@ -1,20 +1,20 @@
 ---
-title: "【論文紹介】MCFlow: Monte Carlo Flow Models for Data Imputation"
-subtitle: "新しい欠損データの補完法に関する論文紹介"
+title: "【論文紹介】The Lottery Ticket Hypothesis"
+subtitle: "宝くじ仮説の論文紹介"
 
 # Summary for listings and search engines
-summary: "新しい欠損データの補完法に関する論文紹介"
+summary: "宝くじ仮説の論文紹介"
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/07/143102
+external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/09/133253
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]
 
 # Date published
-date: 2021-11-07T00:00:00+09:00
+date: 2021-11-09T00:00:00+09:00
 
 # Date updated
-lastmod: 2021-11-07T00:00:00+09:00
+lastmod: 2021-11-09T00:00:00+09:00
 
 # Is this an unpublished draft?
 draft: false
