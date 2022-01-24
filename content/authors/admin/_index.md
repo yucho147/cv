@@ -9,9 +9,9 @@ superuser: true
 role: Data Scientist
 
 # Organizations/Affiliations to show in About widget
-organizations:
-- name: Brainpad Inc.
-  url: https://www.brainpad.co.jp
+# organizations:
+# - name: Brainpad Inc.
+#   url: https://www.brainpad.co.jp
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I also interest in the use of data in the space exploration industry.
@@ -72,4 +72,4 @@ email: ""
 highlight_name: false
 ---
 
-I am a data scientist at Brainpad Inc. My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I also interest in the use of data in the space exploration industry.
+I am a data scientist<!--  at Brainpad Inc -->. My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I also interest in the use of data in the space exploration industry.
