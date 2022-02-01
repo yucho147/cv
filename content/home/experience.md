@@ -27,7 +27,7 @@ experience:
     company_url: ''
     location: Tokyo
     date_start: '2018-04-01'
-    date_end: ''
+    date_end: '2022-01-31'
     description: |2-
         Responsibilities include:
         
