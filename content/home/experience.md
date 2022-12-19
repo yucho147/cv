@@ -23,19 +23,6 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Data Scientist
-    company: Weathernews Inc.
-    company_url: ''
-    location: Chiba
-    date_start: '2022-02-01'
-    date_end: ''
-    description: |2-
-        Responsibilities include:
-        
-        * Analysing
-        * Modelling
-        * Deploying
-        
-  - title: Data Scientist
     company: Brainpad Inc.
     company_url: ''
     location: Tokyo
