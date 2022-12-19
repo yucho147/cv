@@ -27,6 +27,7 @@ experience:
     company_url: ''
     location: Chiba
     date_start: '2022-02-01'
+    date_end: ''
     description: |2-
         Responsibilities include:
         
