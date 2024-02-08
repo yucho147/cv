@@ -38,7 +38,7 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
+url_code: "https://colab.research.google.com/drive/1j6qeeGtnbEJjBr3M7pSEhD5Md2DW3Pni?usp=sharing"
 url_pdf: ""
 url_slides: ""
 url_video: ""
@@ -61,4 +61,4 @@ projects: []
 
 採用イベントで、気象データとデータサイエンスについてお話ししました。
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGwjXer9GHTyNd5_isCO2gbUCtuk5BTlvaJojFeUU140kIgxVtXHjo79fa6Bq6EDuXMLURbhVBt0MM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGwjXer9GHTyNd5_isCO2gbUCtuk5BTlvaJojFeUU140kIgxVtXHjo79fa6Bq6EDuXMLURbhVBt0MM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
