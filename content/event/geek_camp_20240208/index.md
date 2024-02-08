@@ -15,6 +15,7 @@ location: オンライン
 summary: "技育CAMPアカデミア"
 abstract: "みなさんも天気予報をはじめとする気象データを通じて、外出時の服装や活動の計画などを立てる際に日常的にご活用いただいていると思います。このように気象に関するデータは人の行動と密接に関係することは明らかであり、データ分析の観点でも非常に多くの示唆を与える素性として活用されています。今回のイベントでは、気象現象との相関がある実際の事柄を例に、コマンドやコードを交えつつ気象データの魅力に迫りながらビジネスへの応用方法を具体的に紐解いていきます。
 
+
 ぜひお気軽にご参加ください!"
 
 # Talk start and end times.
@@ -39,7 +40,7 @@ image:
 links:
 url_code: ""
 url_pdf: ""
-url_slides: "https://docs.google.com/presentation/d/1wp0HSPOA8Jw5fEuECwnyFJECkpBntf22uExNzmSAfBI/edit?usp=sharing"
+url_slides: ""
 url_video: ""
 
 # Markdown Slides (optional).
@@ -60,4 +61,4 @@ projects: []
 
 採用イベントで、気象データとデータサイエンスについてお話ししました。
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGwjXer9GHTyNd5_isCO2gbUCtuk5BTlvaJojFeUU140kIgxVtXHjo79fa6Bq6EDuXMLURbhVBt0MM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGwjXer9GHTyNd5_isCO2gbUCtuk5BTlvaJojFeUU140kIgxVtXHjo79fa6Bq6EDuXMLURbhVBt0MM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
