@@ -1,4 +1,4 @@
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20210413192202-ab8d28988e0e h1:l9ZvxE12kMiwIV5eMUAaQ64aopV7NaBMAIOSTy1kIqg=
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20210413192202-ab8d28988e0e/go.mod h1:H22qfH9qj3FWwsk7+bAZpmT24yRGNQURah2/IRwjbn8=
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms v0.0.0-20210413192202-ab8d28988e0e h1:VVNzzaAkvHR7YEfqPB2wembtTOKSsW+1I5aKBm7zhh4=
-github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms v0.0.0-20210413192202-ab8d28988e0e/go.mod h1:AKpYbqUVlj0VYsc7Jsxe1o8Ko2yV31A5ZPdfpACcXJw=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231209203044-d31adfedd40b h1:rAluI3a9m5ZoJY5xTF7YcgA4YTJLsvPTEh6sVQhPb+o=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231209203044-d31adfedd40b/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33 h1:x348mgyKtNQKGROIZ/A0WYbKitzD5ySaWWny0C8wF9U=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33/go.mod h1:+qBbqXbKT7M2nOeHQa5OrRXwQKpEx1RXpMGirHbT7HU=

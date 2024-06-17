@@ -1,5 +1,5 @@
 ---
-title: On the possibility of searches for MeV scale gauge boson in $L_\mu-L_\tau$ symmetry
+title: On the possibility of searches for MeV scale gauge boson in $L_\mu-L_\tau$ symmetry(en)
 
 event: &event DArk matter, Neutrinos and their Connections(DA$\nu$Co)
 event_url: ""
