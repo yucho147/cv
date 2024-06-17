@@ -12,7 +12,7 @@ copyright: '© 2021-2022 Yuya Kaneta' # Footer text, e.g. '© {year} Me'
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: "ja"
+defaultContentLanguage: "en"
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
