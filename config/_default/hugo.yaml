@@ -4,9 +4,10 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: "Yuya Kaneta"
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://yuyakaneta.page'
+copyright: '© 2021-2024 Yuya Kaneta' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
