@@ -33,10 +33,10 @@ authors:
 - admin
 
 tags:
-- お知らせ
+- Post
 
 categories:
-- お知らせ
+- Post
 ---
 
 ## 概要
