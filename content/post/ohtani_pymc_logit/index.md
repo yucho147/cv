@@ -210,9 +210,11 @@ past_home_run = df_2024.with_columns(
 ### ベイズの定理
 ベイジアンモデリングでは、ベイズの定理に基づいて、データと事前知識を組み合わせて、事後分布を推定します。
 
+{{< math >}}
 $$
 p(\theta|{\rm data}) = \frac{p({\rm data}|\theta)p(\theta)}{p({\rm data})}
 $$
+{{< /math >}}
 
 - $\theta$ はモデルのパラメータ(ホームラン確率 $p_{\rm season}$ や回帰係数 $\beta_{\rm 1b}$ など)
 - $p(\theta∣{\rm data})$ は事後分布で、観測データを考慮した後のパラメータの分布

@@ -112,31 +112,33 @@ categories:
 ノード1はノード2とノード3とは友人関係にありますが、ノード4とはノード3を介した友達の友達のような関係性です。
 次数行列 $D$ は非常に簡単で、それぞれのノードが何本のエッジを有しているかを行列の対角成分に置いた行列のことです。従って今回の例の場合
 
-\begin{align}
+{{< math >}}
+$$
 D = 
 \begin{pmatrix}
 2 & 0 & 0 & 0 \\\ 0 & 2 & 0 & 0 \\\ 0 & 0 & 3 & 0 \\\ 0 & 0 & 0 & 1
 \end{pmatrix}
-\end{align}
+$$
+{{< /math >}}
 
 となります。
 また、ノード間の繋がりを行列表記したものが隣接行列 $A$ と呼ばれるものです。上のグラフを隣接行列で表現したものが
 
-\begin{align}
+$$
 A = 
 \begin{pmatrix}
 0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 0 & 1 & 0
 \end{pmatrix}
-\end{align}
+$$
 
 になります。ノード1の友人が誰かを知りたい場合には1行目、または1列目を確認します。ノード2, 3と繋がるエッジとして1がふられており、エッジが構成されていないノード4には0がふられます。このように隣接行列はノードとエッジの関係性を行列で表現したものになります。
 上記例では「グラフ構造 -> 隣接行列」の流れで行列を構築しましたが、逆の「隣接行列 -> グラフ構造」を構成することも容易です。
 
 隣接行列は「ノード1はノード4とはノード3を介した友達の友達のような関係性です」も表現することができています。上で紹介した隣接行列は1step先のノードとエッジの関係を表現するものでした。ノード1とノード4は2step先のノードに当たりますが、隣接行列のべき数がstep数と対応します。例えば2step先のノードとの関係性は $A^2$ に対応します。
 
-\begin{align}
-A^2 &= \begin{pmatrix}0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 0 & 1 & 0\end{pmatrix} \begin{pmatrix}0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 0 & 1 & 0\end{pmatrix} \\\ &= \begin{pmatrix}2 & 1 & 1 & 1 \\\ 1 & 2 & 1 & 1 \\\ 1 & 1 & 3 & 0 \\\ 1 & 1 & 0 & 1\end{pmatrix}
-\end{align}
+$$
+A^2 = \begin{pmatrix}0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 0 & 1 & 0\end{pmatrix} \begin{pmatrix}0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 0 & 1 & 0\end{pmatrix} \\\ = \begin{pmatrix}2 & 1 & 1 & 1 \\\ 1 & 2 & 1 & 1 \\\ 1 & 1 & 3 & 0 \\\ 1 & 1 & 0 & 1\end{pmatrix}
+$$
 
 ここで計算した $A^2$ が構成するグラフ構造は
 
@@ -179,15 +181,15 @@ A^2 &= \begin{pmatrix}0 & 1 & 1 & 0 \\\ 1 & 0 & 1 & 0 \\\ 1 & 1 & 0 & 1 \\\ 0 & 
 
 Auto-Encoderのモデル全体として隣接行列 $A$ と特徴量行列 $X$ を入力し、潜在変数 $Z$ を推論します。また、Variational Graph Auto-Encoderの文面では $Z$ の事後分布に正規分布を仮定し、KLを最小化します。
 
-\begin{align}
+$$
 q(\mathbf{Z}|\mathbf{X},\mathbf{A}) = \prod_{i=1}^N q(\mathbf{z}_i|\mathbf{X},\mathbf{A}) \quad \text{with} \quad q(\mathbf{z}_i|\mathbf{X},\mathbf{A}) = \mathcal{N}(\mathbf{z}_i| \boldsymbol{\mu}_i, \mathrm{diag}(\boldsymbol{\sigma}_i^2))
-\end{align}
+$$
 
 ここで $\boldsymbol{\mu} = \mathrm{GCN}\_{\boldsymbol \mu} (\mathbf{X}, \mathbf{A})$ 、 $\log\boldsymbol{\sigma} = \mathrm{GCN}\_{\boldsymbol{\sigma}}(\mathbf{X}, \mathbf{A})$ で構成されます。ここで登場する $\mathrm{GCN}$ の関数はグラフ畳み込み層を指します。グラフ畳み込み層は下記のような2層のネットワークで構築されます。
 
-\begin{align}
-\mathrm{GCN}(\mathbf{X}, \mathbf{A}) &= \mathbf{\tilde{A}}\ \mathrm{ReLU}\bigl(\mathbf{\tilde{A}}\mathbf{X}\mathbf{W}_0\bigr)\mathbf{W}_1\\\ \mathbf{\tilde{A}} &= \mathbf{D}^{-\frac{1}{2}}\mathbf{A}\mathbf{D}^{-\frac{1}{2}}
-\end{align}
+$$
+\mathrm{GCN}(\mathbf{X}, \mathbf{A}) = \mathbf{\tilde{A}}\ \mathrm{ReLU}\bigl(\mathbf{\tilde{A}}\mathbf{X}\mathbf{W}_0\bigr)\mathbf{W}_1\\\ \mathbf{\tilde{A}} = \mathbf{D}^{-\frac{1}{2}}\mathbf{A}\mathbf{D}^{-\frac{1}{2}}
+$$
 
 補足として、次元圧縮する $\mathrm{GCN}(\mathbf{X}, \mathbf{A})$ は $\mathbf{\tilde{A}}$ が $N\times N$ の行列、特徴量行列 $\mathbf{X}$ が $N \times D$ の行列で構成されています。また $\mathbf{W}_i$ は圧縮したい次元に従った大きさになります。ここでは $\mathbf{W}_0$ を $D \times K_0$ 行列、 $\mathbf{W}_1$ を $K_0 \times K$ 行列で構成し、GCN全体として $N \times K$ 行列とします。この一行一行が各ノードの潜在空間でのK次元分散表現とみなすことができます。
 
@@ -198,9 +200,9 @@ q(\mathbf{Z}|\mathbf{X},\mathbf{A}) = \prod_{i=1}^N q(\mathbf{z}_i|\mathbf{X},\m
 
 Auto-Encoderのdecoder側が
 
-\begin{align}
+$$
 p\left(\mathbf{A|\mathbf{Z}}\right) = \prod_{i=1}^N\prod_{j=1}^N p\left(A_{ij}|\mathbf{z}_i,\mathbf{z}_j\right)\quad \text{with} \quad p\left(A_{ij}=1\,|\,\mathbf{z}_i,\mathbf{z}_j\right) = \sigma(\mathbf{z}_i^\top\mathbf{z}_j) 
-\end{align}
+$$
 
 で構成され、 $A_{ij}$ が $\mathbf{A}$ の成分を指し、 $\sigma(\cdot)$ がシグモイド関数を指します。VAEとしてはreconstruction lossに対応します。
 
@@ -211,9 +213,9 @@ p\left(\mathbf{A|\mathbf{Z}}\right) = \prod_{i=1}^N\prod_{j=1}^N p\left(A_{ij}|\
 
 学習では重み行列 $\mathbf{X}$ を更新し、通常のVAE同様KLと再構成誤差の和で変分下界を構成し、最大化します。
 
-\begin{align}
+$$
 \mathcal{L} =  \mathbb{E}\_{q(\mathbf{Z}|\mathbf{X},\mathbf{A})}\bigl[\log p\left(\mathbf{A}|\mathbf{Z}\right)\bigr] - \mathrm{KL}\bigl[q(\mathbf{Z}|\mathbf{X},\mathbf{A})||p(\mathbf{Z})\bigr]
-\end{align}
+$$
 
 学習自体もVAEと同様に reparametrization trickを使って誤差を伝播させます。
 
@@ -226,9 +228,9 @@ p\left(\mathbf{A|\mathbf{Z}}\right) = \prod_{i=1}^N\prod_{j=1}^N p\left(A_{ij}|\
 
 GVAEは潜在変数の事前分布に確率的な正規分布を仮定して学習をしていきますが、もっと直接的に non-probabilistic な方法で Graph Auto-Encoderをする方法も提案しています。
 
-\begin{align}
+$$
 \mathbf{\hat{A}} = \sigma\bigl(\mathbf{Z} \mathbf{Z}^\top\bigr) \quad \text{with} \quad \mathbf{Z} = \mathrm{GCN}(\mathbf{X}, \mathbf{A})
-\end{align}
+$$
 
 
 <a id="org6746a5d"></a>
