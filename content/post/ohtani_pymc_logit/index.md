@@ -238,9 +238,8 @@ $$
 
 
 $$
-p = \sigma\Bigl[{\rm logit}(p_{\rm season})\\
-+ \beta_0 + \beta_{\rm 1b} \cdot {\rm 1塁の走者の有無} + \beta_{\rm 2b} \cdot {\rm 2塁の走者の有無}\\
-+ \cdots +\\
+p = \sigma\Bigl[{\rm logit}(p_{\rm season}) + \beta_0 \\+ \beta_{\rm 1b} \cdot {\rm 1塁の走者の有無}\\ + \beta_{\rm 2b} \cdot {\rm 2塁の走者の有無}\\
++\cdots +\\
 \beta_{\rm out} \cdot {\rm アウトカウント}\Bigr]
 $$
 
