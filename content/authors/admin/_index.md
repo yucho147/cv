@@ -85,4 +85,4 @@ work:
 
 ## About Me
 
-My research was a particle physics phenomenology. Of course, I am interested in data science and particle physics, but recently I also interest in the use of data in the space exploration industry.
+My research was in particle physics phenomenology. Of course, I am interested in both data science and particle physics, but recently, I have also become interested in the use of data in the space exploration industry.
