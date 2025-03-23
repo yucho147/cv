@@ -3,7 +3,7 @@ title: 母数警察アプリ
 summary: 母数の意味を広く認知してもらうためのwebアプリ
 
 tags:
-date: "2025-04-01T00:00:00Z"
+date: "2025-03-23T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
