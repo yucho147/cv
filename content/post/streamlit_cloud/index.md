@@ -15,7 +15,7 @@ date: 2025-04-01T00:00:00+09:00
 lastmod: 2024-04-01T00:00:00+09:00
 
 # Is this an unpublished draft?
-draft: true
+draft: false
 
 # Show this page in the Featured widget?
 featured: false
