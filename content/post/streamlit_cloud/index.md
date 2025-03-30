@@ -1,9 +1,9 @@
 ---
-title: "streamlit cloudの初期設定"
-subtitle: "streamlit cloudでappを公開するまでの覚書"
+title: "Streamlit Community Cloudの初期設定"
+subtitle: "Streamlit Community Cloudでappを公開するまでの覚書"
 
 # Summary for listings and search engines
-summary: "streamlit cloudでappを公開するまでの覚書"
+summary: "Streamlit Community Cloudでappを公開するまでの覚書"
 
 # Link this post with a project
 projects: []
@@ -99,6 +99,13 @@ Streamlitのコードの説明などは省略します。
 適切にデプロイできました👏
 
 ### 補足
+#### Streamlit Community Cloudの仕様
+しばらくの時間アクセスがない場合に、Streamlit Community Cloudにデプロイしたアプリはスリープ状態になります。
+正確に把握していないのですが、おそらく1日程度誰もアクセスしないとスリープになる感じがします(ドキュメントのどこかに載っている気はする)。
+![](/img/streamlit_cloud/step12.png)
+スリープ状態になるとアクセスした際に、上記のような画面になります。とはいえ、アクセスした方が「Yes, get this app back up!」ボタンを押していただければ、数秒で再起動します。
+
+#### 閲覧制限
 追加設定をすることで、限定公開もできるようです。
 ![](/img/streamlit_cloud/step11.png)
 試していないですが、招待したメールアドレスの人にだけ公開ができるんすかね。
