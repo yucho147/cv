@@ -59,6 +59,7 @@ Streamlitは、PythonコードからインタラクティブなWebアプリケ�
 
 ## Streamlit Community Cloudのアカウントを作成
 下記のページにアクセスし、アカウントを作成します。
+
 https://share.streamlit.io/
 
 ![](/img/streamlit_cloud/step1.png)
