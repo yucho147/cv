@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>飲み会割り勘計算ツール</title>
+    <title>飲み会割り勘計算ツール (レイヤー数変更可能版)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -41,19 +41,38 @@
             border-color: #6366f1; /* Tailwind indigo-500 */
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Tailwind ring-indigo-200 */
         }
-        .calculate-button {
+        .calculate-button, .layer-button {
             width: 100%;
             padding: 0.875rem; /* Tailwind p-3.5 */
-            background-color: #4f46e5; /* Tailwind indigo-600 */
             color: white;
             font-weight: 600; /* Tailwind font-semibold */
             border-radius: 0.375rem; /* Tailwind rounded-md */
             border: none;
             cursor: pointer;
             transition: background-color 0.2s;
+            margin-top: 0.5rem;
+        }
+        .calculate-button {
+            background-color: #4f46e5; /* Tailwind indigo-600 */
         }
         .calculate-button:hover {
             background-color: #4338ca; /* Tailwind indigo-700 */
+        }
+        .layer-button-add {
+            background-color: #2dd4bf; /* Tailwind teal-400 */
+        }
+        .layer-button-add:hover {
+            background-color: #14b8a6; /* Tailwind teal-500 */
+        }
+        .layer-button-remove {
+            background-color: #fb7185; /* Tailwind rose-400 */
+        }
+        .layer-button-remove:hover {
+            background-color: #f43f5e; /* Tailwind rose-500 */
+        }
+        .layer-button-remove:disabled {
+            background-color: #fda4af; /* Tailwind rose-300 */
+            cursor: not-allowed;
         }
         .results-container {
             margin-top: 2rem; /* Tailwind mt-8 */
@@ -92,13 +111,19 @@
             margin-top: 1rem; /* Tailwind mt-4 */
             text-align: center;
         }
-        .tier-inputs {
+        .layer-group {
+            margin-bottom: 1.5rem; /* Tailwind mb-6 */
+            padding: 1rem; /* Tailwind p-4 */
+            border: 1px solid #e5e7eb; /* Tailwind border-gray-200 */
+            border-radius: 0.5rem; /* Tailwind rounded-lg */
+        }
+        .layer-inputs {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem; /* Tailwind gap-4 */
         }
         @media (max-width: 480px) {
-            .tier-inputs {
+            .layer-inputs {
                 grid-template-columns: 1fr;
             }
         }
@@ -110,51 +135,16 @@
 
         <div class="input-group">
             <label for="totalAmount">支払い合計額 (円)</label>
-            <input type="number" id="totalAmount" placeholder="例: 30000" min="0">
+            <input type="number" id="totalAmount" placeholder="例: 30,000" min="0">
         </div>
 
-        <h2 class="text-xl font-semibold text-gray-700 mb-4 mt-6">各階級の情報</h2>
-
-        <div class="mb-6 p-4 border border-gray-200 rounded-lg">
-            <h3 class="text-lg font-medium text-indigo-600 mb-3">階級1</h3>
-            <div class="tier-inputs">
-                <div>
-                    <label for="peopleTier1" class="text-sm">人数 (人)</label>
-                    <input type="number" id="peopleTier1" placeholder="例: 5" min="0">
-                </div>
-                <div>
-                    <label for="weightTier1" class="text-sm">支払い重み</label>
-                    <input type="number" id="weightTier1" placeholder="例: 3 (高)" min="0" step="0.1">
-                </div>
+        <h2 class="text-xl font-semibold text-gray-700 mb-4 mt-6">各レイヤーの情報</h2>
+        <div id="layersContainer">
             </div>
-        </div>
 
-        <div class="mb-6 p-4 border border-gray-200 rounded-lg">
-            <h3 class="text-lg font-medium text-indigo-600 mb-3">階級2</h3>
-            <div class="tier-inputs">
-                <div>
-                    <label for="peopleTier2" class="text-sm">人数 (人)</label>
-                    <input type="number" id="peopleTier2" placeholder="例: 10" min="0">
-                </div>
-                <div>
-                    <label for="weightTier2" class="text-sm">支払い重み</label>
-                    <input type="number" id="weightTier2" placeholder="例: 2 (中)" min="0" step="0.1">
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-6 p-4 border border-gray-200 rounded-lg">
-            <h3 class="text-lg font-medium text-indigo-600 mb-3">階級3</h3>
-            <div class="tier-inputs">
-                <div>
-                    <label for="peopleTier3" class="text-sm">人数 (人)</label>
-                    <input type="number" id="peopleTier3" placeholder="例: 3" min="0">
-                </div>
-                <div>
-                    <label for="weightTier3" class="text-sm">支払い重み</label>
-                    <input type="number" id="weightTier3" placeholder="例: 1 (低)" min="0" step="0.1">
-                </div>
-            </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <button id="addLayerButton" class="layer-button layer-button-add">レイヤーを追加</button>
+            <button id="removeLayerButton" class="layer-button layer-button-remove">最後のレイヤーを削除</button>
         </div>
 
         <button id="calculateButton" class="calculate-button">計算する</button>
@@ -163,22 +153,14 @@
 
         <div id="results" class="results-container" style="display: none;">
             <h3>計算結果</h3>
-            <div class="result-item">
-                <span>階級1 (一人あたり):</span>
-                <strong id="paymentTier1">0 円</strong>
-            </div>
-            <div class="result-item">
-                <span>階級2 (一人あたり):</span>
-                <strong id="paymentTier2">0 円</strong>
-            </div>
-            <div class="result-item">
-                <span>階級3 (一人あたり):</span>
-                <strong id="paymentTier3">0 円</strong>
-            </div>
+            <div id="resultsList">
+                </div>
             <hr class="my-3 border-gray-300">
              <div class="result-item">
-                <span>合計支払い確認:</span>
-                <strong id="totalPaymentCheck">0 円</strong>
+                <span>合計支払い確認 (集金額):</span> <strong id="totalPaymentCheck">0 円</strong>
+            </div>
+            <div class="result-item"> <span>キャッシュバック可能額:</span>
+                <strong id="cashbackAmount">0 円</strong>
             </div>
         </div>
     </div>
@@ -186,108 +168,221 @@
     <script>
         // DOM要素の取得
         const totalAmountInput = document.getElementById('totalAmount');
-        const peopleTier1Input = document.getElementById('peopleTier1');
-        const weightTier1Input = document.getElementById('weightTier1');
-        const peopleTier2Input = document.getElementById('peopleTier2');
-        const weightTier2Input = document.getElementById('weightTier2');
-        const peopleTier3Input = document.getElementById('peopleTier3');
-        const weightTier3Input = document.getElementById('weightTier3');
+        const layersContainer = document.getElementById('layersContainer');
+        const addLayerButton = document.getElementById('addLayerButton');
+        const removeLayerButton = document.getElementById('removeLayerButton');
         const calculateButton = document.getElementById('calculateButton');
         const resultsDiv = document.getElementById('results');
-        const paymentTier1Span = document.getElementById('paymentTier1');
-        const paymentTier2Span = document.getElementById('paymentTier2');
-        const paymentTier3Span = document.getElementById('paymentTier3');
+        const resultsListDiv = document.getElementById('resultsList');
         const totalPaymentCheckSpan = document.getElementById('totalPaymentCheck');
+        const cashbackAmountSpan = document.getElementById('cashbackAmount'); // 追加
         const errorMessageDiv = document.getElementById('errorMessage');
 
-        calculateButton.addEventListener('click', () => {
-            // エラーメッセージと結果をリセット
-            errorMessageDiv.style.display = 'none';
-            errorMessageDiv.textContent = '';
-            resultsDiv.style.display = 'none';
+        const MIN_LAYERS = 1;
+        const DEFAULT_LAYERS = 3;
+        const MAX_LAYERS = 10;
 
-            // 入力値の取得とバリデーション
-            const totalAmount = parseFloat(totalAmountInput.value);
-            const p1 = parseInt(peopleTier1Input.value) || 0;
-            const w1 = parseFloat(weightTier1Input.value) || 0;
-            const p2 = parseInt(peopleTier2Input.value) || 0;
-            const w2 = parseFloat(weightTier2Input.value) || 0;
-            const p3 = parseInt(peopleTier3Input.value) || 0;
-            const w3 = parseFloat(weightTier3Input.value) || 0;
+        // レイヤー入力欄を生成する関数
+        function createLayerElement(layerNumber) {
+            const layerId = `layer-${layerNumber}`;
 
-            // 入力チェック
-            if (isNaN(totalAmount) || totalAmount <= 0) {
-                showError("支払い合計額は正の数で入力してください。");
+            const layerDiv = document.createElement('div');
+            layerDiv.classList.add('layer-group');
+            layerDiv.setAttribute('id', layerId);
+            layerDiv.dataset.layerNumber = layerNumber;
+
+            const title = document.createElement('h3');
+            title.classList.add('text-lg', 'font-medium', 'text-indigo-600', 'mb-3');
+            title.textContent = `レイヤー ${layerNumber}`;
+            layerDiv.appendChild(title);
+
+            const inputsDiv = document.createElement('div');
+            inputsDiv.classList.add('layer-inputs');
+
+            // 人数入力
+            const peopleDiv = document.createElement('div');
+            const peopleLabel = document.createElement('label');
+            peopleLabel.setAttribute('for', `people-${layerId}`);
+            peopleLabel.classList.add('text-sm');
+            peopleLabel.textContent = '人数 (人)';
+            const peopleInput = document.createElement('input');
+            peopleInput.setAttribute('type', 'number');
+            peopleInput.setAttribute('id', `people-${layerId}`);
+            peopleInput.setAttribute('placeholder', '例: 5');
+            peopleInput.setAttribute('min', '0');
+            peopleDiv.appendChild(peopleLabel);
+            peopleDiv.appendChild(peopleInput);
+            inputsDiv.appendChild(peopleDiv);
+
+            // 重み入力
+            const weightDiv = document.createElement('div');
+            const weightLabel = document.createElement('label');
+            weightLabel.setAttribute('for', `weight-${layerId}`);
+            weightLabel.classList.add('text-sm');
+            weightLabel.textContent = '支払い重み';
+            const weightInput = document.createElement('input');
+            weightInput.setAttribute('type', 'number');
+            weightInput.setAttribute('id', `weight-${layerId}`);
+            weightInput.setAttribute('placeholder', '例: 3');
+            weightInput.setAttribute('min', '0');
+            weightInput.setAttribute('step', '0.1');
+            weightDiv.appendChild(weightLabel);
+            weightDiv.appendChild(weightInput);
+            inputsDiv.appendChild(weightDiv);
+
+            layerDiv.appendChild(inputsDiv);
+            return layerDiv;
+        }
+
+        // レイヤーを追加する関数
+        function addLayer() {
+            if (layersContainer.children.length >= MAX_LAYERS) {
+                showError(`レイヤーは最大${MAX_LAYERS}までです。`);
                 return;
             }
-            if ((p1 < 0 || isNaN(p1)) || (p2 < 0 || isNaN(p2)) || (p3 < 0 || isNaN(p3))) {
-                showError("各階級の人数は0以上の整数で入力してください。");
-                return;
+            const newLayerNumber = layersContainer.children.length + 1;
+            const newLayerElement = createLayerElement(newLayerNumber);
+            layersContainer.appendChild(newLayerElement);
+            updateRemoveButtonState();
+        }
+
+        // 最後のレイヤーを削除する関数
+        function removeLayer() {
+            if (layersContainer.children.length > MIN_LAYERS) {
+                layersContainer.removeChild(layersContainer.lastChild);
+                updateRemoveButtonState();
             }
-             if ((w1 < 0 || isNaN(w1)) || (w2 < 0 || isNaN(w2)) || (w3 < 0 || isNaN(w3))) {
-                showError("各階級の支払い重みは0以上の数値で入力してください。");
-                return;
+        }
+        
+        // 「最後のレイヤーを削除」ボタンの状態を更新
+        function updateRemoveButtonState() {
+            removeLayerButton.disabled = layersContainer.children.length <= MIN_LAYERS;
+        }
+
+        // 初期レイヤーの設定
+        function initializeLayers() {
+            layersContainer.innerHTML = ''; // 既存のレイヤーをクリア
+            for (let i = 1; i <= DEFAULT_LAYERS; i++) {
+                const layerElement = createLayerElement(i);
+                layersContainer.appendChild(layerElement);
             }
-            if (p1 === 0 && p2 === 0 && p3 === 0) {
-                showError("少なくともいずれかの階級に1人以上設定してください。");
-                return;
-            }
-            if ((p1 > 0 && w1 <= 0) || (p2 > 0 && w2 <= 0) || (p3 > 0 && w3 <= 0)) {
-                 showError("人数が1人以上の階級では、支払い重みは正の数で入力してください。");
-                 return;
-            }
+            updateRemoveButtonState();
+        }
 
-
-            // 加重合計 (Weighted Sum) の計算
-            // 各階級の「人数 × 重み」の合計
-            const weightedSum = (p1 * w1) + (p2 * w2) + (p3 * w3);
-
-            if (weightedSum <= 0) {
-                if (p1 > 0 || p2 > 0 || p3 > 0) { // 人数がいるのに重み合計が0の場合
-                     showError("有効な支払い重みが設定されていません。人数が設定されている階級には正の重みを設定してください。");
-                } else { // 参加者がいない場合（これは上のバリデーションでカバーされるはずだが念のため）
-                     showError("参加人数が0名です。");
-                }
-                return;
-            }
-
-            // 基準単価 (k) の計算
-            // k = 支払い合計額 / 加重合計
-            const baseUnitPayment = totalAmount / weightedSum;
-
-            // 各階級の一人当たりの支払い額を計算
-            // 階級iの一人当たり支払額 = 基準単価 * 階級iの重み
-            const payment1 = (p1 > 0) ? baseUnitPayment * w1 : 0;
-            const payment2 = (p2 > 0) ? baseUnitPayment * w2 : 0;
-            const payment3 = (p3 > 0) ? baseUnitPayment * w3 : 0;
-
-            // 結果の表示
-            paymentTier1Span.textContent = `${Math.ceil(payment1).toLocaleString()} 円`;
-            paymentTier2Span.textContent = `${Math.ceil(payment2).toLocaleString()} 円`;
-            paymentTier3Span.textContent = `${Math.ceil(payment3).toLocaleString()} 円`;
-
-            // 検算：合計支払額の確認
-            const totalCalculated = (Math.ceil(payment1) * p1) + (Math.ceil(payment2) * p2) + (Math.ceil(payment3) * p3);
-            totalPaymentCheckSpan.textContent = `${totalCalculated.toLocaleString()} 円 (入力合計: ${totalAmount.toLocaleString()} 円)`;
-
-
-            resultsDiv.style.display = 'block';
-        });
-
+        // エラーメッセージ表示関数
         function showError(message) {
             errorMessageDiv.textContent = message;
             errorMessageDiv.style.display = 'block';
             resultsDiv.style.display = 'none';
         }
 
-        // 初期値のプレースホルダー設定（任意）
-        // peopleTier1Input.value = 5;
-        // weightTier1Input.value = 3;
-        // peopleTier2Input.value = 10;
-        // weightTier2Input.value = 2;
-        // peopleTier3Input.value = 3;
-        // weightTier3Input.value = 1;
-        // totalAmountInput.value = 50000;
+        // 計算ボタンのイベントリスナー
+        calculateButton.addEventListener('click', () => {
+            errorMessageDiv.style.display = 'none';
+            errorMessageDiv.textContent = '';
+            resultsListDiv.innerHTML = ''; 
+            resultsDiv.style.display = 'none';
+
+            const totalAmount = parseFloat(totalAmountInput.value);
+
+            if (isNaN(totalAmount) || totalAmount <= 0) {
+                showError("支払い合計額は正の数で入力してください。");
+                return;
+            }
+
+            let weightedSum = 0;
+            const layerDataArray = [];
+            let totalPeople = 0;
+
+            const layerElements = layersContainer.children;
+            for (let i = 0; i < layerElements.length; i++) {
+                const layerElement = layerElements[i];
+                const layerNumber = layerElement.dataset.layerNumber;
+                const peopleInput = layerElement.querySelector(`input[id^="people-layer-"]`);
+                const weightInput = layerElement.querySelector(`input[id^="weight-layer-"]`);
+
+                const p = parseInt(peopleInput.value) || 0;
+                const w = parseFloat(weightInput.value) || 0;
+
+                if (p < 0) {
+                    showError(`レイヤー ${layerNumber} の人数は0以上の整数で入力してください。`);
+                    return;
+                }
+                if (w < 0) {
+                    showError(`レイヤー ${layerNumber} の支払い重みは0以上の数値で入力してください。`);
+                    return;
+                }
+                if (p > 0 && w <= 0) {
+                    showError(`レイヤー ${layerNumber} のように人数が1人以上のレイヤーでは、支払い重みは正の数で入力してください。`);
+                    return;
+                }
+                
+                if (p > 0) {
+                    layerDataArray.push({ people: p, weight: w, layerNumber: layerNumber });
+                    weightedSum += p * w;
+                    totalPeople += p;
+                } else { // 人数が0の場合も、表示のために配列に含める
+                     layerDataArray.push({ people: p, weight: w, layerNumber: layerNumber, isZeroPeople: true });
+                }
+            }
+
+            if (totalPeople === 0 && layerElements.length > 0) { // レイヤーがあるのに参加者がいない場合
+                showError("参加人数が0名です。各レイヤーの人数を入力するか、不要なレイヤーを削除してください。");
+                return;
+            }
+             if (layerElements.length === 0) { // レイヤーが一つもない場合
+                showError("計算対象のレイヤーがありません。「レイヤーを追加」ボタンでレイヤーを作成してください。");
+                return;
+            }
+
+
+            if (weightedSum <= 0 && totalPeople > 0) {
+                 showError("有効な支払い重みが設定されていません。人数が設定されているレイヤーには正の重みを設定してください。");
+                 return;
+            }
+            
+            const baseUnitPayment = (weightedSum > 0) ? totalAmount / weightedSum : 0;
+            let totalCollected = 0;
+
+            resultsListDiv.innerHTML = ''; 
+
+            layerDataArray.forEach(layerData => {
+                const resultItemDiv = document.createElement('div');
+                resultItemDiv.classList.add('result-item');
+
+                const labelSpan = document.createElement('span');
+                labelSpan.textContent = `レイヤー ${layerData.layerNumber} (一人あたり):`;
+                
+                const valueStrong = document.createElement('strong');
+                let paymentPerPerson = 0;
+                
+                if (layerData.people > 0 && layerData.weight > 0 && !layerData.isZeroPeople) { 
+                    const initialPayment = baseUnitPayment * layerData.weight;
+                    // 500円単位で切り上げ
+                    paymentPerPerson = Math.ceil(initialPayment / 500) * 500; 
+                    totalCollected += paymentPerPerson * layerData.people;
+                }
+                
+                valueStrong.textContent = `${paymentPerPerson.toLocaleString()} 円`;
+
+                resultItemDiv.appendChild(labelSpan);
+                resultItemDiv.appendChild(valueStrong);
+                resultsListDiv.appendChild(resultItemDiv);
+            });
+            
+            totalPaymentCheckSpan.textContent = `${totalCollected.toLocaleString()} 円 (元の合計: ${totalAmount.toLocaleString()} 円)`;
+            const cashback = totalCollected - totalAmount;
+            cashbackAmountSpan.textContent = `${cashback.toLocaleString()} 円`;
+
+            resultsDiv.style.display = 'block';
+        });
+
+        // イベントリスナーの設定
+        addLayerButton.addEventListener('click', addLayer);
+        removeLayerButton.addEventListener('click', removeLayer);
+
+        // 初期化
+        initializeLayers();
     </script>
 </body>
 </html>
