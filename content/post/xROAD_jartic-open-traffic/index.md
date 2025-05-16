@@ -53,7 +53,7 @@ categories:
 
 ## データ詳細
 全国の国の管理区間に設置されたトラフィックカウンター（画像認識型を含む）により観測した交通量データです。
-詳しくは下記のページにて記載されています。
+詳しくは下記のページにて記載されています。  
 https://www.jartic-open-traffic.org/
 
 | 様式名 | 観測方法           | 集計単位     | 生成タイミング       | 検索可能期間  |
@@ -67,7 +67,7 @@ https://www.jartic-open-traffic.org/
 
 ※2：CCTVトラカンとは、道路管理用のCCTVカメラの画像からAIで、自動的に交通量観測を行うタイプのトラフィックカウンターです。
 
-APIの仕様は下記のpdfに記載されています。
+APIの仕様は下記のpdfに記載されています。  
 https://www.jartic-open-traffic.org/action_method.pdf
 
 ## データ取得方法
