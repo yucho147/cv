@@ -45,7 +45,7 @@ categories:
 日頃、業務で道路に関するデータ分析をしていることもあり、まずは触ってみた次第です。
 
 (まずページがかっちょ良い)
-![](/img/jartic-open-traffic/home.png)
+![](/img/xROAD_jartic-open-traffic/home.png)
 
 # DATABASE/常時観測交通量（国管理道路）
 [DATABASE](https://www.xroad.mlit.go.jp/database/)ページにて公開されているデータを検索できます。
@@ -119,7 +119,7 @@ gdf.head()
 
 見にくいので、 `tabulate` をinstallして
 
-``python
+```python
 print(gdf.head().to_markdown())
 ```
 
