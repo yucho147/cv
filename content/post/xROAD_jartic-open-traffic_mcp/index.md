@@ -9,10 +9,10 @@ summary: "xROAD常時観測交通量(国管理道路)のデータを取得する
 projects: []
 
 # Date published
-date: 2025-05-19T00:00:00+09:00
+date: 2025-05-20T00:00:00+09:00
 
 # Date updated
-lastmod: 2024-05-19T00:00:00+09:00
+lastmod: 2024-05-20T00:00:00+09:00
 
 # Is this an unpublished draft?
 draft: false
