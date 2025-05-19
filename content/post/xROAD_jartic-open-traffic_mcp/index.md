@@ -390,6 +390,4 @@ if __name__ == "__main__":
 ぜひ自作MCPの実験に使ってみてください。
 
 結果、下記の動画のような実行が実現できます。
-{{< rawhtml >}}
 <iframe src="https://drive.google.com/file/d/1JnMY8IMNQt0gRXd55sWE-cDXPoX0wK-C/preview" width="640" height="480" allow="autoplay"></iframe>
-{{< /rawhtml >}}
