@@ -58,7 +58,7 @@ categories:
 今回必要なモジュールをインストールします。
 
 ```bash
-uv add "mcp[cli] "pandera[geopandas]" geopandas geopy requests langchain langchain-openai langgraph langchain_mcp_adapters
+uv add "mcp[cli]" "pandera[geopandas]" geopandas geopy requests langchain langchain-openai langgraph langchain_mcp_adapters
 ```
 
 必要なモジュールを一括で入れておきました。
@@ -317,7 +317,9 @@ client = MultiServerMCPClient(config)
 tools = await client.get_tools()
 ```
 
-こんな具合です(上記のままでは `await` があるため正常に動きません)。この処理で `server.py` (MCP)で定義したtoolを、 `langchain` のtool型のオブジェクトを得ることができます。
+こんな具合です。ただし上記のままでは `await` があるため正常に動きません。 `get_tools` メソッドが `async` で用意されているので、 `await` で取得します。同期処理用のメソッドがあるのかは調べていないです。
+
+この処理で `server.py` (MCP)で定義したtoolを、 `langchain` のtool型のオブジェクトを得ることができます。
 
 ReAct型のAgentは
 
@@ -325,7 +327,7 @@ ReAct型のAgentは
 from langgraph.prebuilt import create_react_agent
 
 graph = create_react_agent(
-    model="openai:gpt-4o",
+    model="openai:gpt-4o-mini",
     tools=tools,
 )
 ```
@@ -351,7 +353,7 @@ async def main():
 
     # ReActエージェントの作成
     graph = create_react_agent(
-        model="openai:gpt-4o",
+        model="openai:gpt-4o-mini",
         tools=tools,
     )
 
@@ -390,4 +392,4 @@ if __name__ == "__main__":
 ぜひ自作MCPの実験に使ってみてください。
 
 結果、下記の動画のような実行が実現できます。
-<iframe src="https://drive.google.com/file/d/1JnMY8IMNQt0gRXd55sWE-cDXPoX0wK-C/preview" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1JnMY8IMNQt0gRXd55sWE-cDXPoX0wK-C/preview" width="640" height="360" allow="autoplay"></iframe>
