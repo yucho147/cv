@@ -64,6 +64,7 @@ uv add "mcp[cli]" "pandera[geopandas]" geopandas geopy requests langchain langch
 必要なモジュールを一括で入れておきました。
 
 # MCPサーバーの構築
+## ジオコーディング用のコード
 [前回](https://www.yuyakaneta.page/post/xroad_jartic-open-traffic/)の記事を参考にMCPサーバーを構築しました。
 
 まずはジオコーディングをして、文字列から緯度経度を取得する関数を用意します。
@@ -88,6 +89,7 @@ def get_lat_lon(
 
 `geopy` を使うことで、こんな感じで緯度経度を取得できます。OpenStreetMapなどからデータを取得して、ジオコーディングをしているっぽいです。
 
+## MCPサーバーの実装
 超簡単なMCPとしては
 
 ```python
@@ -286,6 +288,7 @@ if __name__ == "__main__":
 MCPだけでは何も面白くないので、Agent(ReAct)でMCPを受け取り、想定通りの処理ができているか確かめてみます。
 Agent自体は `langgraph` での実装なので、本質的には数行で完了します。
 
+## クライアント側の設定と簡易的なコード
 一方MCPを認識させるためには、設定ファイル(`config.yaml`)で実行方法などを書き記しておきます。
 
 ```yaml
@@ -333,6 +336,8 @@ graph = create_react_agent(
 ```
 
 こんな感じで用意することができます。
+## CLIでのAgent応答コード
+
 あとは非同期処理も含む応答をcliで実行するコードを構築したので、共有します。
 
 ```python
