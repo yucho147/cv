@@ -1,7 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "@tailwindcss/cli": "^4.1.13"
   },
   "name": "cv",
   "version": "1.0.0",

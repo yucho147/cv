@@ -1,5 +1,5 @@
 [build]
-  command = "npm ci --include=dev && ./node_modules/.bin/tailwindcss --version && hugo --gc --minify -b $URL && npx --yes pagefind --source 'public'"
+  command = "npm ci --include=dev && npx @tailwindcss/cli --version >/dev/null && hugo --gc --minify -b $URL && npx --yes pagefind --source 'public'"
   publish = "public"
 
 [build.environment]
