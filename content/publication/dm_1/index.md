@@ -14,7 +14,9 @@ authors:
 - Masataka Inokuchi
 
 # Author notes (optional)
-doi: "10.1002/jja2.12604"
+hugoblox:
+  ids:
+    doi: "10.1002/jja2.12604"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2021-07-07T00:00:00Z"
@@ -43,14 +45,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'publication/dm_1/jja2.12604.pdf'
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+links:
+  - type: pdf
+    url: 'publication/dm_1/jja2.12604.pdf'
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.

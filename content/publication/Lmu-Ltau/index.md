@@ -9,7 +9,9 @@ authors:
 - Takashi Shimomura
 
 # Author notes (optional)
-doi: "10.1093/ptep/ptx050"
+hugoblox:
+  ids:
+    doi: "10.1093/ptep/ptx050"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-05-18T00:00:00Z"
@@ -38,14 +40,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'publication/Lmu-Ltau/ptx050.pdf'
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+links:
+  - type: pdf
+    url: 'publication/Lmu-Ltau/ptx050.pdf'
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.

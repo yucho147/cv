@@ -44,14 +44,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'publication/multiml/2106.02301.pdf'
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+links:
+  - type: pdf
+    url: 'publication/multiml/2106.02301.pdf'
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.

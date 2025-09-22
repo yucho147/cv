@@ -58,29 +58,31 @@ education:
     institution: Niigata University
     date_start: 2013-04-01
     date_end: 2015-03-31
+
 work:
-  - position: Data Scientist
+  - position: Data Science Manager
     company_name: Weathernews Inc.
     company_url: ''
     company_logo: ''
     date_start: 2022-02-01
     date_end: ''
-    summary: |2-
+    summary: |-
       Responsibilities include:
-      - Analysing
+      - Leading the Data Science group (people management, 1:1s, performance reviews)
+      - Analyzing
       - Modeling
-      - Deplying
+      - Deploying
   - position: Data Scientist
     company_name: Brainpad Inc.
     company_url: ''
     company_logo: ''
     date_start: 2018-04-01
     date_end: 2022-01-31
-    summary: |2-
+    summary: |-
       Responsibilities include:
-      - Analysing
+      - Analyzing
       - Modeling
-      - Deplying
+      - Deploying
 ---
 
 ## About Me

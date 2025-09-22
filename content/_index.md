@@ -95,7 +95,6 @@ sections:
     design:
       # Choose a layout view
       view: card
-      # view: date-title-summary
       spacing:
         padding: ['10px', '0', '10px', '0']
   - block: collection

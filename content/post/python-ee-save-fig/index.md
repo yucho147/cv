@@ -39,7 +39,7 @@ categories:
 - post
 - 宇宙開発
 ---
-
+hugo server
 本ページでは `earthengine-api` を使ってGoogle Earth Engine(GEE)をpythonを通してアクセスします。
 さらに、衛星画像をpngファイルとして保存するまでの手続きをフォローします。
 

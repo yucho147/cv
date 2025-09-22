@@ -12,7 +12,9 @@ authors:
 - Tsutomu T. Yanagida
 
 # Author notes (optional)
-doi: "10.1016/j.physletb.2016.11.024"
+hugoblox:
+  ids:
+    doi: "10.1016/j.physletb.2016.11.024"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-10T00:00:00Z"
@@ -41,14 +43,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'publication/CP_violating/scoap3-fulltext.pdf'
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+links:
+  - type: pdf
+    url: 'publication/CP_violating/scoap3-fulltext.pdf'
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
