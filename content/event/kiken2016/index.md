@@ -1,16 +1,10 @@
 ---
-title: Occam's Razor in Lepton Mass Matrices -The Sign of Universe's Baryon Asymmetry-[ポ]
+title: Occam's Razor in Lepton Mass Matrices -The Sign of Universe's Baryon Asymmetry-[ポ]
 
 event: &event 基研研究会 素粒子物理学の進展2016
 event_url: ""
 
 location: 京都大学・基礎物理学研究所
-# address:
-#   street: 450 Serra Mall
-#   city: Stanford
-#   region: CA
-#   postcode: '94305'
-#   country: United States
 
 summary: *event
 abstract: ""
@@ -25,7 +19,7 @@ all_day: true
 publishDate: *date
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "バリオン数非対称性", "CP対称性", "ポスター発表", "研究会", "博士課程"]
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -44,14 +38,4 @@ url_video: ""
 #   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-# - example
----
+#   Otherwise, set `slides
