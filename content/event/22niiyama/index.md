@@ -1,16 +1,10 @@
 ---
-title: $L_\mu-L_\tau$ゲージ対称性に伴うMeVスケール粒子の探索について[ポ]
+title: $L_\mu-L_\tau$ゲージ対称性に伴うMeVスケール粒子の探索について[ポ]
 
 event: &event 第22回 新潟・山形合宿
 event_url: ""
 
 location: 福島県 磐梯青少年自然の家
-# address:
-#   street: 450 Serra Mall
-#   city: Stanford
-#   region: CA
-#   postcode: '94305'
-#   country: United States
 
 summary: *event
 abstract: ""
@@ -25,7 +19,7 @@ all_day: true
 publishDate: *date
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "ゲージ理論", "ポスター発表", "合宿", "博士課程"]
 
 # Is this a featured talk? (true/false)
 featured: false
@@ -46,12 +40,3 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-# - example
----
