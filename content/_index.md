@@ -94,7 +94,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: showcase
+      view: card
       # view: date-title-summary
       spacing:
         padding: ['10px', '0', '10px', '0']

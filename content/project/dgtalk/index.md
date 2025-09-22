@@ -14,10 +14,9 @@ image:
   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/search?q=%23dgtalk
+  - icon: brands/x
+    name: Follow
+    url: https://x.com/search?q=%23dgtalk
 url_code: ""
 url_pdf: ""
 url_slides: ""
