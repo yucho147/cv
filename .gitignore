@@ -1,5 +1,6 @@
 # IDEs
 .idea/
+.aider*
 
 # Hugo
 /resources/
