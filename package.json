@@ -2,5 +2,15 @@
   "private": true,
   "devDependencies": {
     "tailwindcss": "^4.1.13"
-  }
+  },
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
