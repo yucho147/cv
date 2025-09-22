@@ -3,8 +3,12 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.126.3"
+  HUGO_VERSION = "0.150.0"
+  HUGO_EXTENDED = "true"
   HUGO_ENABLEGITINFO = "true"
+  NODE_VERSION = "22"
+  GO_VERSION = "1.23"
+  TZ = "Asia/Tokyo"
 
 [context.production.environment]
   HUGO_ENV = "production"
