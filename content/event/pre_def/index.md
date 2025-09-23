@@ -1,5 +1,5 @@
 ---
-title: ミュー粒子の磁気能率に基づくMeVスケールの物理探索
+title: ミュー粒子の磁気能率に基づくMeVスケールの物理探索
 
 event: 博士事前審査
 event_url: ""
@@ -25,33 +25,4 @@ all_day: false
 publishDate: "2017-12-22T00:00:00Z"
 
 authors: []
-tags: []
-
-# Is this a featured talk? (true/false)
-featured: false
-
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-  focal_point: Right
-
-links:
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: ""
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
-# - example
----
+tags: ["素粒子物理学", "異
