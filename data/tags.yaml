@@ -1,0 +1,112 @@
+# イベント・発表用タグ定義
+tags:
+  # 学問分野
+  academic_fields:
+    - name: "素粒子物理学"
+      description: "素粒子物理学に関する研究発表"
+    - name: "ニュートリノ物理学"
+      description: "ニュートリノに関する物理学研究"
+    - name: "データサイエンス"
+      description: "データ分析・データサイエンス関連"
+    - name: "気象データ"
+      description: "気象データの分析・活用"
+    - name: "機械学習"
+      description: "機械学習・AI関連技術"
+    - name: "統計学"
+      description: "統計学・統計解析関連"
+
+  # 発表形式
+  presentation_types:
+    - name: "口頭発表"
+      description: "口頭での研究発表"
+    - name: "ポスター発表"
+      description: "ポスターセッションでの発表"
+    - name: "招待講演"
+      description: "招待された講演"
+    - name: "セミナー"
+      description: "セミナーでの発表"
+    - name: "講演"
+      description: "一般的な講演"
+
+  # 会議・イベント種別
+  event_types:
+    - name: "国際会議"
+      description: "国際的な学術会議"
+    - name: "学会"
+      description: "学会での発表"
+    - name: "研究会"
+      description: "研究会・ワークショップ"
+    - name: "ワークショップ"
+      description: "専門的なワークショップ"
+    - name: "合宿"
+      description: "研究合宿"
+    - name: "支部例会"
+      description: "学会支部の例会"
+    - name: "企業セミナー"
+      description: "企業主催のセミナー"
+    - name: "採用イベント"
+      description: "採用関連のイベント"
+    - name: "技育CAMP"
+      description: "技育CAMPでの発表"
+
+  # 学位・教育関連
+  academic_status:
+    - name: "博士課程"
+      description: "博士課程在籍中の発表"
+    - name: "学位論文"
+      description: "学位論文関連"
+    - name: "中間発表"
+      description: "博士課程中間発表"
+    - name: "公聴会"
+      description: "博士論文公聴会"
+    - name: "事前審査"
+      description: "博士論文事前審査"
+
+  # 素粒子物理学の研究テーマ
+  particle_physics_topics:
+    - name: "ゲージ理論"
+      description: "ゲージ理論に関する研究"
+    - name: "バリオン数非対称性"
+      description: "宇宙のバリオン数非対称性"
+    - name: "CP対称性"
+      description: "CP対称性の破れ"
+    - name: "異常磁気能率"
+      description: "粒子の異常磁気能率"
+    - name: "質量行列"
+      description: "粒子の質量行列"
+    - name: "L_mu-L_tau対称性"
+      description: "L_μ-L_τゲージ対称性"
+    - name: "軽いゲージ粒子"
+      description: "MeVスケールの軽いゲージ粒子"
+    - name: "ニュートリノ三重生成"
+      description: "ニュートリノ三重生成過程"
+
+  # 開催地域
+  location_types:
+    - name: "国内"
+      description: "日本国内での開催"
+    - name: "海外"
+      description: "海外での開催"
+    - name: "オンライン"
+      description: "オンライン開催"
+
+  # データサイエンス関連
+  data_science_topics:
+    - name: "気象予測"
+      description: "気象データを用いた予測"
+    - name: "ビジネス応用"
+      description: "ビジネスへの応用"
+    - name: "データ分析"
+      description: "データ分析手法"
+    - name: "予測モデル"
+      description: "予測モデリング"
+    - name: "不確実性"
+      description: "予測の不確実性評価"
+
+# タグの使用例とガイドライン
+usage_guidelines:
+  - "1つのイベントに対して5-8個程度のタグを推奨"
+  - "学問分野、発表形式、イベント種別は必須"
+  - "研究テーマは内容に応じて適切に選択"
+  - "学位関連は該当する場合のみ追加"
+  - "開催地域は必須"
