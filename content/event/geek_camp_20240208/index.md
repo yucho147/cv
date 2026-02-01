@@ -28,7 +28,7 @@ all_day: false
 publishDate: "2024-02-08T00:00:00Z"
 
 authors: []
-tags: []
+tags: ["データサイエンス", "気象データ", "ビジネス分析"]
 
 # Is this a featured talk? (true/false)
 featured: false

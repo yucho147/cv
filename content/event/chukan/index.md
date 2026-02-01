@@ -25,7 +25,7 @@ all_day: true
 publishDate: *date
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "ニュートリノ物理", "CP対称性"]
 
 # Is this a featured talk? (true/false)
 featured: false

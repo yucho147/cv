@@ -25,4 +25,24 @@ all_day: false
 publishDate: "2017-12-22T00:00:00Z"
 
 authors: []
-tags: ["素粒子物理学", "異
+tags: ["素粒子物理学"]
+
+# Is this a featured talk? (true/false)
+featured: false
+
+image:
+  caption: ''
+  focal_point: Right
+
+links:
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+slides: ""
+
+projects: []
+---
+
+博士事前審査で研究発表を行いました。

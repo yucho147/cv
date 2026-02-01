@@ -25,7 +25,7 @@ all_day: false
 publishDate: "2017-12-18T00:00:00Z"
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "ミューオン異常磁気能率", "新物理探索"]
 
 # Is this a featured talk? (true/false)
 featured: false

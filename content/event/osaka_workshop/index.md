@@ -25,7 +25,7 @@ all_day: true
 publishDate: "2017-11-11T00:00:00Z"
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "新物理探索", "ゲージ粒子"]
 
 # Is this a featured talk? (true/false)
 featured: false

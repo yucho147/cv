@@ -25,7 +25,7 @@ all_day: true
 publishDate: *date
 
 authors: []
-tags: []
+tags: ["素粒子物理学", "新物理探索", "理論物理学"]
 
 # Is this a featured talk? (true/false)
 featured: false
