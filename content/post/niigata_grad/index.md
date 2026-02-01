@@ -5,7 +5,9 @@ subtitle: 卒業式で自然科学研究科の代表に選ばれました
 # Summary for listings and search engines
 summary: 卒業式で自然科学研究科の代表に選ばれました
 
-external_link: https://www.facebook.com/yuya.kaneta/posts/1632441033514082
+links:
+  - name: External Site
+    url: https://www.facebook.com/yuya.kaneta/posts/1632441033514082
 
 # Link this post with a project
 projects: []

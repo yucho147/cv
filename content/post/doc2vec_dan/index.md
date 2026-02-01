@@ -2,7 +2,9 @@
 title: 自然言語処理技術の活用法　ーDoc2VecとDANを使って論文の質を予測してみた！ー
 subtitle: 論文のcite数の伸びを予測しました
 
-external_link: https://blog.brainpad.co.jp/entry/2019/02/20/103508
+links:
+  - name: External Site
+    url: https://blog.brainpad.co.jp/entry/2019/02/20/103508
 
 # Summary for listings and search engines
 summary: 論文のcite数の伸びを予測しました

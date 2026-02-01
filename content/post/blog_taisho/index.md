@@ -5,7 +5,9 @@ subtitle: 会社のブログ大賞に選ばれました
 # Summary for listings and search engines
 summary: 会社のブログ大賞に選ばれました
 
-external_link: http://blog.brainpad.co.jp/entry/2019/08/05/110245
+links:
+  - name: External Site
+    url: http://blog.brainpad.co.jp/entry/2019/08/05/110245
 
 # Link this post with a project
 projects: []

@@ -5,7 +5,9 @@ subtitle: arXiv論文分析webアプリ
 # Summary for listings and search engines
 summary: arXiv論文分析webアプリ
 
-external_link: https://yuyakaneta.page/project/number_of_papers/
+links:
+  - name: External Site
+    url: https://yuyakaneta.page/project/number_of_papers/
 
 # Link this post with a project
 projects: [number_of_papers]

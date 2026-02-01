@@ -5,7 +5,9 @@ subtitle: PyTorchの最初のチュートリアルは「A 60 MINUTE BLITZ」で�
 # Summary for listings and search engines
 summary: PyTorchの最初のチュートリアルは「A 60 MINUTE BLITZ」です。
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2020/03/01/170000
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2020/03/01/170000
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

@@ -5,7 +5,9 @@ subtitle: For 初心者データサイエンティストのLT会@FiNC Technologi
 # Summary for listings and search engines
 summary: For 初心者データサイエンティストのLT会@FiNC Technologies
 
-external_link: "https://data-gateway-talk.connpass.com/event/131111/"
+links:
+  - name: External Site
+    url: 'https://data-gateway-talk.connpass.com/event/131111/'
 
 # Link this post with a project
 projects: [dgtalk]

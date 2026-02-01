@@ -5,7 +5,9 @@ subtitle: 弊社のプレスリリースに載りました
 # Summary for listings and search engines
 summary: 弊社のプレスリリースに載りました。なんとICEPPに常駐し研究支援という形でお仕事をしています。
 
-external_link: https://www.brainpad.co.jp/news/2021/02/15/14225
+links:
+  - name: External Site
+    url: https://www.brainpad.co.jp/news/2021/02/15/14225
 
 # Link this post with a project
 projects: [icepp_project]

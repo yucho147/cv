@@ -5,7 +5,9 @@ subtitle: 案外ちゃんと理解されていないリッジ回帰(L2正則化)
 # Summary for listings and search engines
 summary: 案外ちゃんと理解されていないリッジ回帰(L2正則化)についてまとめました
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2019/10/07/070000
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2019/10/07/070000
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

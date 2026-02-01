@@ -5,7 +5,9 @@ subtitle: For 初心者データサイエンティストのLT会@ZOZOUSED
 # Summary for listings and search engines
 summary: For 初心者データサイエンティストのLT会@ZOZOUSED
 
-external_link: "https://data-gateway-talk.connpass.com/event/140541/"
+links:
+  - name: External Site
+    url: 'https://data-gateway-talk.connpass.com/event/140541/'
 
 # Link this post with a project
 projects: [dgtalk]

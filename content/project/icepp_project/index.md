@@ -8,7 +8,7 @@ tags:
 date: 2020-10-01T20:19:36+09:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -25,11 +25,6 @@ image:
 #   url: https://twitter.com
 #   icon_pack: fab
 #   icon: twitter
-
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

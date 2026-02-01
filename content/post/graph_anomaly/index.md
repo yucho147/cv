@@ -5,7 +5,9 @@ subtitle: "グラフにおけるアノマリ検出に関する論文紹介"
 # Summary for listings and search engines
 summary: "グラフにおけるアノマリ検出に関する論文紹介"
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/09/133339
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/09/133339
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

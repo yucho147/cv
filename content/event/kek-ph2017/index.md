@@ -29,10 +29,8 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
-url_pdf: "https://kds.kek.jp/indico/event/22971/session/1/contribution/46/material/slides/2.pdf"
-url_slides: ""
-url_video: ""
+  - name: PDF
+    url: 'https://kds.kek.jp/indico/event/22971/session/1/contribution/46/material/slides/2.pdf'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

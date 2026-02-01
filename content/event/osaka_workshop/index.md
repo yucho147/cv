@@ -35,10 +35,8 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
-url_pdf: "http://koide-phys.com/us-hep/workshop/2017/report/Kaneta.pdf"
-url_slides: ""
-url_video: ""
+  - name: PDF
+    url: 'http://koide-phys.com/us-hep/workshop/2017/report/Kaneta.pdf'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

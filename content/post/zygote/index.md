@@ -5,7 +5,9 @@ subtitle: 自動微分がJuliaを使うと非常に簡単に実行できまし�
 # Summary for listings and search engines
 summary: 自動微分がJuliaを使うと非常に簡単に実行できました。
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/04/12/220015
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/04/12/220015
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

@@ -5,7 +5,9 @@ subtitle: インタビュー記事を書きました
 # Summary for listings and search engines
 summary: インタビュー記事を書きました
 
-external_link: https://www.gs.niigata-u.ac.jp/~gsweb/program/interview3.html
+links:
+  - name: External Site
+    url: https://www.gs.niigata-u.ac.jp/~gsweb/program/interview3.html
 
 # Link this post with a project
 projects: []

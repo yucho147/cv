@@ -35,10 +35,8 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
-url_pdf: "https://www.icrr.u-tokyo.ac.jp/indico/event/91/contribution/5/material/slides/0.pdf"
-url_slides: ""
-url_video: ""
+  - name: PDF
+    url: 'https://www.icrr.u-tokyo.ac.jp/indico/event/91/contribution/5/material/slides/0.pdf'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

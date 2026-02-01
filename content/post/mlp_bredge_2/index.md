@@ -5,7 +5,9 @@ subtitle: 素朴に「物理出身者を集めてお喋りしたら楽しい」�
 # Summary for listings and search engines
 summary: 素朴に「物理出身者を集めてお喋りしたら楽しい」という発想から、物理になんらかのゆかりがあるデータサイエンティストに向けて勉強会開催に至りました！！
 
-external_link: "https://mlpbridge.connpass.com/event/287660/"
+links:
+  - name: External Site
+    url: 'https://mlpbridge.connpass.com/event/287660/'
 
 # Link this post with a project
 projects: [mlpbridge]

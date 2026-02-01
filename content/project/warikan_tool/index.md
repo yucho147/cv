@@ -6,7 +6,7 @@ tags:
 date: "2025-05-11T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+
 
 image:
   caption: ""

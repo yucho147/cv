@@ -5,7 +5,9 @@ subtitle: We have created a module to run the Gaussian process model. We have im
 # Summary for listings and search engines
 summary: We have created a module to run the Gaussian process model. We have implemented the code based on GPyTorch.
 
-external_link: https://yuyakaneta.page/project/eagpytorch/
+links:
+  - name: External Site
+    url: https://yuyakaneta.page/project/eagpytorch/
 
 # Link this post with a project
 projects: [eaGPyTorch]

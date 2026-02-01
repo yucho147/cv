@@ -5,7 +5,9 @@ subtitle: 対称性とGraphの対応についての論文紹介
 # Summary for listings and search engines
 summary: 対称性とGraphの対応についての論文紹介
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/06/06/214617
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/06/06/214617
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

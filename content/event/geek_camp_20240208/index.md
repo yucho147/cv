@@ -38,10 +38,8 @@ image:
   focal_point: Right
 
 links:
-url_code: "https://colab.research.google.com/drive/1j6qeeGtnbEJjBr3M7pSEhD5Md2DW3Pni?usp=sharing"
-url_pdf: ""
-url_slides: ""
-url_video: ""
+  - name: Code
+    url: 'https://colab.research.google.com/drive/1j6qeeGtnbEJjBr3M7pSEhD5Md2DW3Pni?usp=sharing'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

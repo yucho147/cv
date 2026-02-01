@@ -29,10 +29,8 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
-url_pdf: "http://phy08.phy.ntnu.edu.tw/si2016/document/category/3-oral-report.html"
-url_slides: ""
-url_video: ""
+  - name: PDF
+    url: 'http://phy08.phy.ntnu.edu.tw/si2016/document/category/3-oral-report.html'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

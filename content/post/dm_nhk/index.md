@@ -5,7 +5,9 @@ subtitle: 弊社での取り組みがNHKスペシャルで取り上げられま�
 # Summary for listings and search engines
 summary: 弊社での取り組みがNHKスペシャルで取り上げられました。私も関わっていて、肩とEmacsの画面がチラッと全国放送されました。
 
-external_link: https://www.brainpad.co.jp/news/2021/01/28/14104
+links:
+  - name: External Site
+    url: https://www.brainpad.co.jp/news/2021/01/28/14104
 
 # Link this post with a project
 projects: []

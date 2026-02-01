@@ -5,7 +5,9 @@ subtitle: For 初心者データサイエンティストのLT会@Wantedly株式�
 # Summary for listings and search engines
 summary: For 初心者データサイエンティストのLT会を立ち上げました。@Wantedly株式会社
 
-external_link: "https://data-gateway-talk.connpass.com/event/123782/"
+links:
+  - name: External Site
+    url: 'https://data-gateway-talk.connpass.com/event/123782/'
 
 # Link this post with a project
 projects: [dgtalk]

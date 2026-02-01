@@ -7,7 +7,7 @@ tags:
 date: "2019-03-19T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+
 
 image:
   caption: ""
@@ -17,10 +17,7 @@ links:
   - icon: brands/x
     name: Follow
     url: https://x.com/search?q=%23dgtalk
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
+
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

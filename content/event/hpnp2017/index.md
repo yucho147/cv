@@ -35,10 +35,8 @@ image:
   focal_point: Right
 
 links:
-url_code: ""
-url_pdf: "https://indico.cern.ch/event/571194/contributions/2423301/attachments/1420037/2175685/2016_HPNP.pdf"
-url_slides: ""
-url_video: ""
+  - name: PDF
+    url: 'https://indico.cern.ch/event/571194/contributions/2423301/attachments/1420037/2175685/2016_HPNP.pdf'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

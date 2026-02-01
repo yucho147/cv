@@ -5,7 +5,9 @@ subtitle: PyTorchのチュートリアルは「A 60 MINUTE BLITZ」の続きで�
 # Summary for listings and search engines
 summary: PyTorchのチュートリアルは「A 60 MINUTE BLITZ」の続きです
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2020/03/01/173000
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2020/03/01/173000
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

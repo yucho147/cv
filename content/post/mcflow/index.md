@@ -5,7 +5,9 @@ subtitle: "新しい欠損データの補完法に関する論文紹介"
 # Summary for listings and search engines
 summary: "新しい欠損データの補完法に関する論文紹介"
 
-external_link: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/07/143102
+links:
+  - name: External Site
+    url: https://pseudo-theory-of-everything.hatenablog.com/entry/2021/11/07/143102
 
 # Link this post with a project
 projects: [pseudo_theory_of_everything]

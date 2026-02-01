@@ -5,7 +5,9 @@ subtitle: For 初心者データサイエンティストのLT会@ブレインパ
 # Summary for listings and search engines
 summary: For 初心者データサイエンティストのLT会@ブレインパッド
 
-external_link: "https://data-gateway-talk.connpass.com/event/155457/"
+links:
+  - name: External Site
+    url: 'https://data-gateway-talk.connpass.com/event/155457/'
 
 # Link this post with a project
 projects: [dgtalk]
