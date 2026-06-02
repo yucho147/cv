@@ -68,7 +68,7 @@ kaggle competitions topics show <TOPIC_REF>
 
 また、調査内容がドキュメントとして残らないことも課題でした。調査で得た知見が個人の頭の中にしかなく、後から参照できなかったり、チームで共有しにくかったりします。
 
-そこで、AI DLC（AI Deep Learning Cycle）の考え方を参考に、対話形式で docs を埋めていきながら、設計が揃ったら実装に入るという流れを作りました。
+そこで、AI DLC（AI-Driven Development Life Cycle）の考え方を参考に、対話形式で docs を埋めていきながら、設計が揃ったら実装に入るという流れを作りました。
 
 ## どんな場面で使えるか
 
